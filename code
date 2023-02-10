@@ -1,0 +1,46 @@
+import math
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+def power(a, b):
+    return a ** b
+
+def square_root(a):
+    if a < 0:
+        raise ValueError("Square root of negative number is not defined")
+    return math.sqrt(a)
+
+def logarithm(a, b):
+    if a <= 0 or b <= 0:
+        raise ValueError("Logarithm of non-positive number is not defined")
+    return math.log(a, b)
+
+def sin(a):
+    return math.sin(a)
+
+def cos(a):
+    return math.cos(a)
+
+def tan(a):
+    return math.tan(a)
+
+def inverse_sin(a):
+    return math.asin(a)
+
+def inverse_cos(a):
+    return math.acos(a)
+
+def inverse_tan(a):
+    return math.atan(a)
